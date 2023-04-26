@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Exercise 3</title>
+</head>
+<body>
+	<input type="text" id="id1" placeholder="Enter length in centimeter"><br>
+	<input type="submit" value="Compute" onclick="myFunction()"><br>
+	<p id="answer"></p>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('id1').value;
+			var num2 = 30.48
+			var answer = num1 / num2;
+			document.getElementById('answer').innerHTML = "In feet it is " + answer + "ft";
+		}
+	</script>
+</body>
+</html>
